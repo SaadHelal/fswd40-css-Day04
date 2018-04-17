@@ -1,0 +1,21 @@
+$font-stack: helvetica, sans-serif;
+$size: auto;
+$basiccolor: blue;
+
+@import "partial";
+@import "partial2";
+
+
+@mixin border-radius($radius) {
+	-webkit-border-radius:$radius;
+	-moz-border-radius:$radius;
+	-ms-border-radius:$radius;
+	border-radius:$radius;
+}
+
+ #item1{
+ 		@include border-radius(10px);
+       	border: 5px;
+ }
+
+
